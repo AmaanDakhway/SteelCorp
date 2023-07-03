@@ -1,0 +1,197 @@
+/*
+Theme Name: iDea - Clean & Powerful Bootstrap Theme
+Author: HtmlCoder
+Author URI: https://www.htmlcoder.me
+Author e-mail: htmlcoder.me@gmail.com
+Version: 1.5
+Created: August 2014
+License URI: https://support.wrapbootstrap.com/
+File Description: Place here your custom CSS styles
+*/
+
+/* Create four equal columns that floats next to each other */
+ .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: flex;
+    clear: both;
+  }
+
+  .float{
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom:5px;
+    right:65px;
+    background-color:#0C9;
+    color:#FFF;
+    text-align:center;
+    /* box-shadow: 2px 2px 3px #999; */
+    z-index: 999;
+  }
+  
+  .my-float{
+    margin-left: 0.2vh;
+  }
+
+  @media screen and (min-width: 800px) {
+    .propertytable{
+       padding-left: 15vh;
+       padding-right: 15vh;
+    }
+ }
+
+ @media screen and (max-width: 455px) {
+  .tablefont{
+    font-size: revert;
+    font-size:xx-small;
+  }
+}
+
+@media screen and (min-width: 455px) {
+  .tableheadfont{
+    font-size: revert;
+    font-size:medium;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+.sidenav {
+  height: 100%;
+  width: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  margin: 4vh;
+}
+
+.sidenav a {
+  border-bottom: #8D0000;
+  border-width: 1px;
+  border-color: #8D0000;
+  border-style:solid;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #8D0000;
+}
+
+/* .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+} */
+
+@media screen and (max-height: 1200px) {
+  .sidenav {
+    width: 0px;
+  }
+}
+
+.card {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  margin: 10vh;
+  display: grid;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .cards { grid-template-columns: repeat(1, 1fr); }
+  .cards_pad{
+    padding-left: revert;
+    padding-right: revert;
+    margin: revert;
+  }
+  .pad_text{
+    padding: 10vh;
+  }
+}
+
+.chat-icon-btn {
+  border-width: 0;
+  width: 4%;
+  border-radius: 50%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #12c737;
+  color: #fff;
+  font-size: 35px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  z-index: 999;
+}
+
+.chat-icon {
+  margin-right: 0px !important;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	display: flex;
+  justify-content: center;
+  margin-top: 50%;
+}
+
+
+@media (max-width: 400px) {
+  .after-banner {
+    font-size: 2em;
+    line-height: 1.0;
+    margin-top: 2em;
+  }
+  .after-banner-head {
+    font-size: 1.7em;
+  }
+  .after-banner-btn{
+    font-size: 3em;
+  }
+  .after-banner-btn-video{
+    font-size: 3em;
+    margin-left: 1em;
+  }
+  .after-banner-btn-product{
+    font-size: 1em;
+  }
+}
+
+.banner-height{
+  min-height: 400px;
+}
